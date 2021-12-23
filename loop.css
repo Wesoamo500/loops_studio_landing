@@ -1,0 +1,268 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
+
+*{
+	box-sizing: border-box;
+}
+body{
+	background-color:  hsl(0, 0%, 20%);
+	~font-family: 'Alata', sans-serif;
+	font-family: 'Josefin Sans', sans-serif;
+
+}
+.container{
+	margin:auto;
+	width:45%;
+	
+}
+a{
+	text-decoration: none;
+}
+a:hover{
+  text-decoration: underline;
+}
+.loopstudios{
+	float: left;
+}
+.loopstudios:after, .row:after,.second:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+.nav-bar{
+	text-align: right;
+}
+header{
+	background-image: url("images/desktop/image-hero.jpg");
+	padding: 50px;
+}
+.immersive{
+	border:1px solid white;
+	text-transform: uppercase;
+	width:50%;
+}
+#text-immer{
+	padding: 10px;
+	font-size: 30px;
+	color: white;
+}
+
+.column{
+	float: left;
+	width:25%;
+	padding:5px;
+	position: relative;
+}
+div.column>img{
+	width:100%;
+}
+.loopstudios>a,.loopstudios-foot>a{
+	color: white;
+	font-weight: bold;
+}
+div.nav-bar>a,div.nav-bar-foot>a{
+	padding:3px;
+	color: white;
+	font-size: 10px;
+}
+.btn{float: right;padding:7px;color:black;border:none;}
+.btn:hover{background-color: black;color: white;}
+.relative{
+	position: relative;
+}
+.icons>i svg{cursor: pointer;}
+.absolute{
+	position: absolute;
+	bottom: -10px;
+	right: -50px;
+	left: 300px;
+	top: 75px;
+}
+.text-abs{
+	background:white;
+	padding:20px;
+}
+section{
+	padding:50px;
+	background-color: white;
+}
+.second{
+	margin-top: 60px;
+	margin-bottom:35px; 
+}
+#text-header{
+	text-transform: uppercase;
+}
+.top{
+	padding-bottom: 20px;
+}
+.rel{
+	position: relative;
+}
+.abs{
+	position: absolute;
+	bottom: 10px;
+	left: 16px;
+	text-transform:uppercase;
+	font-size: 19px;
+	color: white 
+}
+footer{
+	background-color: black;
+	padding-top: 10px;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-bottom: 5px;
+}
+.loopstudios-foot{
+	padding-bottom: 20px;
+}
+.left{float: left;}
+.right{text-align: right;}
+#hamburger-btn{
+	margin:auto 0;
+	cursor: pointer;
+	display: none;
+
+}
+#hamburger-btn div{
+	width: 30px;
+	height: 3px;
+	background-color: white;
+	margin: 4px 0;
+	transition: 0.4s;
+}
+
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+  height: 100%;
+  width: 0;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: rgb(0,0,0); /* Black fallback color */
+  background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+.menu {
+  position: relative;
+  top: 25%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: justify; /* Centered text/links */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+
+}
+
+.menu a {
+  padding: 12px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 50px;
+  color: white;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+}
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  color: white;
+}
+
+@media only screen and (max-width: 375px){
+	header .nav-bar{
+		display: none;
+	}
+	#hamburger-btn{
+		display: block;
+		float: right;
+	}
+	.container{
+		width: 100%;
+	}
+	.column{
+		width: 100%;
+	}
+	.menu{
+		width: 100%;
+	}
+	.overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+  .text-abs{
+  	position: relative;
+  	left: -30px;
+  	top: 0px;
+  }
+  #text-header{
+  	font-size: 15px
+  }
+  #text-body{
+  	font-size: 10px
+  }
+  .interactive{
+  	width: 100%;
+  }
+  .immersive{
+  	width:90%;
+  	margin-top: 100px;
+  }
+  #text-immer{
+  	padding-left: 10px;
+  	font-size: 20px;
+  }
+  .column img{
+  	height: 120px;
+  }
+  .left{
+  	width: 100%;
+  	float: none;
+  	text-align: center;
+  	padding-bottom:30px; 
+  }
+  .right{
+  	width: 100%;
+  	float: none;
+  	text-align: center;
+  }
+  .nav-bar-foot a{
+  	display: block;
+  	margin-bottom: 10px;
+  }
+  a:hover{
+  text-decoration: underline;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
